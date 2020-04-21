@@ -1,5 +1,7 @@
 
+##This function gets a square and invertiblbe matrix and puts it into Cache.  
 
+##This function also has 4 other functions:  set, get, setInverse, and getInverse
 makeCacheMatrix <- function(x = matrix()) {
 
         inv <-NULL
@@ -20,7 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
   }
 
 
-
+## This function either retrieves the inverse in Cache or solves for the matrix and sets the inverse in Cache
+## it is awesome the matrix is invertible.  
 cacheSolve <- function(x, ...) {
        
   m <- x$getInverse()
